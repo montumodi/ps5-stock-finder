@@ -1,6 +1,6 @@
 const { getRawHtml } = require("../requestMaker");
 
-const url = "https://www.amazon.co.uk/PlayStation-9395003-5-Console/dp/B08H95Y452/";
+const url = "https://www.amazon.co.uk/gp/product/B08H95Y452";
 
 async function process() {
     const rawHtml = await getRawHtml(url);

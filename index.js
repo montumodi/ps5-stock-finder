@@ -1,6 +1,7 @@
-const playSound = require("./playSourd");
+const App = require("./sendToGoogleHome");
 const randomIntFromInterval = require("./randomizer");
 const cTable = require('console.table');
+const playSound = require("./playSourd");
 
 const array = [
     require("./providers/amazon")(),
@@ -8,7 +9,8 @@ const array = [
     require("./providers/argo")(),
     require("./providers/very")(),
     require("./providers/johnlewis")(),
-    require("./providers/ebuyer")()
+    require("./providers/ebuyer")(),
+    require("./providers/game")()
 ];
 
 (async () => {
@@ -18,7 +20,7 @@ const array = [
         const available = responses.filter(i => i.message === "Available");
         if (available.length > 0) {
             console.log(available);
-            playSound();
+            await playSound();
         }
         await new Promise(resolve => setTimeout(resolve, randomIntFromInterval(5000, 10000)))
     }
