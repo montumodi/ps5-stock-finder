@@ -1,0 +1,16 @@
+{
+  "name": "ps5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "console.table": "^0.10.0",
+    "sound-play": "^1.1.0"
+  }
+}
