@@ -12,7 +12,7 @@ const playSound = require("./playSourd");
             require("./providers/very")(),
             require("./providers/johnlewis")(),
             require("./providers/ebuyer")(),
-            // require("./providers/game")(),
+            require("./providers/game")(),
             require("./providers/asda")()
         ];
 
