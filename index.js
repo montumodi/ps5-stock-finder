@@ -3,18 +3,19 @@ const randomIntFromInterval = require("./randomizer");
 const cTable = require('console.table');
 const playSound = require("./playSourd");
 
-const array = [
-    require("./providers/amazon")(),
-    require("./providers/ao")(),
-    require("./providers/argo")(),
-    require("./providers/very")(),
-    require("./providers/johnlewis")(),
-    require("./providers/ebuyer")(),
-    require("./providers/game")()
-];
-
 (async () => {
     while (true) {
+        const array = [
+            require("./providers/amazon")(),
+            require("./providers/ao")(),
+            require("./providers/argo")(),
+            require("./providers/very")(),
+            require("./providers/johnlewis")(),
+            require("./providers/ebuyer")(),
+            // require("./providers/game")(),
+            require("./providers/asda")()
+        ];
+
         const responses = await Promise.all(array);
         console.table(responses);
         const available = responses.filter(i => i.message === "Available");
