@@ -4,7 +4,6 @@ const url = "https://direct.asda.com/george/toys-character/gaming/gaming-console
 
 async function process() {
     const rawHtml = await getRawHtml(url);
-    console.log(rawHtml);
     if (!rawHtml) {
         return { "provider": "asda", "message": "Error scrapping asda", "time": new Date() };
     }
