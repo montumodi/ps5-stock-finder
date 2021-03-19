@@ -38,7 +38,7 @@ var App = {
             slow: false,
             host: 'https://translate.google.com',
         });
-        App.GoogleHome(App.DeviceIp, text, function (res) {
+        App.GoogleHome(App.DeviceIp, url, function (res) {
             console.log(res);
         })
     },
