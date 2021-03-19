@@ -38,7 +38,7 @@ var App = {
             slow: false,
             host: 'https://translate.google.com',
         });
-        App.GoogleHome(App.DeviceIp, "https://fsa.zobj.net/download/b95aaXKvDAo8c52sxJssaLm7_Oco8a-5DcyOpX_EVwryVbvxjCgu2Fk5JecLx-FnDVLaN_1Y93Bhmho6-1r_hi6Qrh3DJMC84vNjQZDiwkoVIV38xrxH_8Li05hI/?a=web&c=72&f=alarm-_sound.mp3&special=1615846054-qJU%2FathKaMpUBTPmQmec8SRAL8YZFgFhGN3%2FHSu9qHY%3D", function (res) {
+        App.GoogleHome(App.DeviceIp, text, function (res) {
             console.log(res);
         })
     },
