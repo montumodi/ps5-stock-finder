@@ -19,7 +19,7 @@ It can alert you in two ways
 ## How to install
 
 ```
-npm install ps5-stock-finder
+npm install
 ```
 
 ## Runing
